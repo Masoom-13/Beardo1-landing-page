@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beardo - Grooming for Men</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          background-color: #141313; /* Dark background color */
+          color: #fff; /* White text color */
+          padding: 5px 0; /* Top and bottom padding */
+        }
+
+        .container {
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between; /* Align search bar to the right */
+        }
+    
+        .search-container {
+          display: flex;
+        }
+    
+        input[type="text"] {
+          padding: 10px;
+          border: 1px solid #fff; /* White border */
+          border-radius: 5px 0 0 5px;
+          width: 200px;
+          color: #fff; /* White text */
+          background-color: #000000; /* Dark background */
+        }
+    
+        button {
+          padding: 10px 20px;
+          background-color: #fff; /* White button */
+          color: #000000; /* Dark text on button */
+          border: none;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+        }
+
+      </style>
+</head>
+
+
+
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="who_we_are.png">
+                <h1>Beardo</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+              </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container1">
+        <div class="image-wrapper active">
+          <img src="Flot1.webp" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+          <img src="Flot2.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper">
+          <img src="Flot3.webp" alt="Image 3">
+        </div>
+      </div>
+    
+      <script>
+        const imageWrappers = document.querySelectorAll('.image-wrapper');
+        let currentIndex = 0;
+    
+        function transitionImages() {
+          imageWrappers[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % imageWrappers.length;
+          imageWrappers[currentIndex].classList.add('active');
+        }
+    
+        setInterval(transitionImages, 2000); // Transition every 2 second
+      </script>
+
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Grooming Products for the Modern Man</h2>
+                <p>Discover our range of premium grooming products crafted just for you.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2 class="section-title">Trending products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="T1.webp" alt="Beard Oil">
+                    <h3>Beardo Face Shild Kit</h3>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="T2.webp" alt="Face Wash">
+                    <h3>Beardo incredi-BALL Trimmer</h3>
+                    <p>₹1,799</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="T3.webp" alt="Hair Wax">
+                    <h3>Beardo Hair fall control kit</h3>
+                    <p>₹799</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="T4.webp" alt="Shampoo">
+                    <h3>Beardo Ultimate Facewash TRIO</h3>
+                    <p>₹599</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2 class="section-title">New Launch</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="NL1.webp" alt="Beard Oil">
+                    <h3>Beardo Anti Grey Hair Serum</h3>
+                    <p>₹699</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="NL2.webp" alt="Face Wash">
+                    <h3>Beardo Whisky Smoke Firebomb Perfume EDP</h3>
+                    <p>₹1399</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="NL3.webp" alt="Hair Wax">
+                    <h3>Beardo Ball Safe Trimmer</h3>
+                    <p>₹5,499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="NL4.webp" alt="Shampoo">
+                    <h3>Beardo Whisky Smoke Bourbon Bodywash</h3>
+                    <p>₹299</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2 class="section-title">Fragrance Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="FG1.webp" alt="Beard Oil">
+                    <h3>Beardo Dark Side Perfume for Men EDP</h3>
+                    <p>₹1,500</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="FG2.webp" alt="Face Wash">
+                    <h3>Beardo Whisky Smoke Single Malt EDP</h3>
+                    <p>₹999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="FG3.webp" alt="Hair Wax">
+                    <h3>Beardo Origin Perfume For Men</h3>
+                    <p>₹899</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="FG4.webp" alt="Shampoo">
+                    <h3>Beardo White Opium Perfume EDP</h3>
+                    <p>₹1,499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="product-section">
+            <h2 class="section-title">Face Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="F1.webp" alt="Beard Oil">
+                    <h3>Beardo Vitamin C 2 in 1 Toning Serum</h3>
+                    <p>₹550</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="F2.webp" alt="Face Wash">
+                    <h3>Beardo Sport Sunscreen Stick SPF50 (20g)</h3>
+                    <p>₹699</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="F3.webp" alt="Hair Wax">
+                    <h3>Beardo Lip Lightener For Men</h3>
+                    <p>₹550</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="F4.webp" alt="Shampoo">
+                    <h3>Beardo Ultimate Facewash Combo</h3>
+                    <p>₹900</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Us</h2>
+            <p>At Beardo, we believe in empowering men to look and feel their best. Our products are designed with care, ensuring quality and effectiveness for the modern man.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:support@beardo.com">support@beardo.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+          <div class="footer-section">
+            <h3>PRODUCTS</h3>
+            <ul>
+              <li><a href="#">Combos</a></li>
+              <li><a href="#">Beard</a></li>
+              <li><a href="#">Face</a></li>
+              <li><a href="#">Hair</a></li>
+              <li><a href="#">Body</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>ORDERS</h3>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Track Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>IMPORTANT LINKS</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Return & Refund Policy</a></li>
+              <li><a href="#">Nearby Stores & Salon</a></li>
+              <li><a href="#">Warranty Registration</a></li>
+              <li><a href="#">Pushpa Sale TERM & CONDITIONS</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>COMMUNITY</h3>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <div class="email-signup">
+              <h4>SIGN UP FOR EMAIL</h4>
+              <p>Deals, News and Stealth products releases</p>
+              <input type="email" placeholder="Email">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>COPYRIGHT 2025</p>
+          <p>Beardo India</p>
+        </div>
+      </footer>
+</body>
+</html>
